@@ -78,6 +78,7 @@ The dataset contains:
 
 ---
 
-## 📸 Dashboard Screenshot : https://github.com/princesi22/Online-Store-Annual-Report/blob/main/Screenshot%202026-01-22%20092547.png
+![Dashboard Screenshot](Screenshot%202026-01-22%20092547.png)
+
 
 
