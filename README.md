@@ -97,8 +97,6 @@ The dataset includes:
 
 > Note: This dataset is used for learning and portfolio purposes.
 
----
 
-## 📸 Dashboard Screenshot
-```md
-![Online Store Annual Report Dashboard](Screenshot%202026-01-22%20092547.png)
+![Dashboard Screenshot](Screenshot%202026-01-22%20092547.png)
+
