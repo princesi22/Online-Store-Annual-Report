@@ -32,13 +32,13 @@ It is an interactive dashboard designed to help understand **customer behavior, 
 - Followed by Karnataka, Uttar Pradesh, Tamil Nadu, and Telangana  
 
 ### 2️⃣ Sales by Age Group
-- **Youth** category contributes the highest sales  
-- Women dominate sales within the youth segment  
+- **Youth and Adult** categories contribute the highest sales  
+- Women dominate sales contribution in both segments  
 
 ### 3️⃣ Monthly Sales vs Orders
 - Dual-axis chart comparing **sales value** and **order count**  
 - Peak sales observed during **March and May**  
-- Helps identify seasonal demand patterns  
+- Highlights seasonal demand patterns  
 
 ### 4️⃣ Sales by Gender
 - **Women:** ~66%  
@@ -51,7 +51,28 @@ It is an interactive dashboard designed to help understand **customer behavior, 
 - **Cancelled / Other:** 2%  
 
 ### 6️⃣ Sales by Channel
-- Myntra shows **100% sales contribution** based on selected filters  
+- Strong sales contribution from **Amazon, Myntra, and Flipkart**  
+- Myntra shows highest contribution under selected filters  
+
+---
+
+## 📊 Results & Conclusion
+
+### 📈 Results
+- Maximum sales were recorded during the **March to June** period  
+- Highest sales contribution came from **Maharashtra, Karnataka, and Uttar Pradesh**  
+- **Women customers** contributed the majority of sales  
+- Most active customer segment was **Adult age group (25–45 years)**  
+- Top-performing sales channels were **Amazon, Myntra, and Flipkart**  
+
+### 🧠 Business Conclusion
+Based on the analysis of historical sales data, the final conclusion is:
+
+- Target **women customers** during the **hot summer season (March–June)**  
+- Focus marketing efforts in **Maharashtra, Karnataka, and Uttar Pradesh**  
+- Run targeted marketing campaigns on **Amazon, Myntra, and Flipkart**
+
+This strategy can help maximize sales, improve customer engagement, and increase marketing effectiveness.
 
 ---
 
@@ -64,7 +85,7 @@ It is an interactive dashboard designed to help understand **customer behavior, 
 ---
 
 ## 📂 Dataset Information
-The dataset contains:
+The dataset includes:
 - Order ID  
 - Order Date  
 - State  
@@ -78,7 +99,6 @@ The dataset contains:
 
 ---
 
-![Dashboard Screenshot](Screenshot%202026-01-22%20092547.png)
-
-
-
+## 📸 Dashboard Screenshot
+```md
+![Online Store Annual Report Dashboard](Screenshot%202026-01-22%20092547.png)
