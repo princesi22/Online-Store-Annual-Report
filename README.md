@@ -98,5 +98,6 @@ The dataset includes:
 > Note: This dataset is used for learning and portfolio purposes.
 
 
-![Dashboard Screenshot]https://github.com/princesi22/Online-Store-Annual-Report/blob/main/Dashboard%20screenshot.png
+![Dashboard Screenshot](Dashboard%20screenshot.png)
+
 
