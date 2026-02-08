@@ -4,9 +4,9 @@
 
 ### *Data-Driven Insights for Strategic Sales Growth*
 
-[![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://github.com/princesi22/Online-Store-Report)
-[![Power Query](https://img.shields.io/badge/Power%20Query-0078D4?style=for-the-badge)](https://github.com/princesi22/Online-Store-Report)
 [![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)](https://github.com/princesi22/Online-Store-Report)
+[![Power Query](https://img.shields.io/badge/Power%20Query-0078D4?style=for-the-badge)](https://github.com/princesi22/Online-Store-Report)
+[![Data Visualization](https://img.shields.io/badge/Data-Visualization-blue?style=for-the-badge)](https://github.com/princesi22/Online-Store-Report)
 [![Business Intelligence](https://img.shields.io/badge/Business-Intelligence-FF6B6B?style=for-the-badge)](https://github.com/princesi22/Online-Store-Report)
 
 ![Dashboard Screenshot](Dashboard%20screenshot.png)
@@ -34,7 +34,7 @@
 
 ## 📌 Project Overview
 
-The **Online Store Annual Sales Report** is a comprehensive, interactive dashboard built with **Power BI** that provides end-to-end analysis of e-commerce performance. This project analyzes sales data across multiple dimensions to uncover actionable insights for business growth.
+The **Online Store Annual Sales Report** is a comprehensive, interactive dashboard built with **Microsoft Excel** and **Power Query** that provides end-to-end analysis of e-commerce performance. This project analyzes sales data across multiple dimensions to uncover actionable insights for business growth.
 
 ### **Dashboard Scope:**
 
@@ -93,13 +93,13 @@ The dashboard provides dynamic filtering capabilities for deep-dive analysis:
 
 ### **Dashboard Capabilities:**
 
-- 🔄 **Cross-Filtering** - Interactive selection across all visuals
-- 📊 **Dual-Axis Charts** - Compare sales vs. orders simultaneously
-- 🎨 **Color-Coded Insights** - Quick visual interpretation
-- 📱 **Responsive Design** - Optimized viewing experience
-- 💾 **Data Export** - Download filtered data for deeper analysis
-- 🔢 **DAX Calculations** - Real-time metric computations
+- 🎛️ **Slicers & Filters** - Interactive selection across all visuals
+- 📊 **Pivot Charts** - Dynamic charts linked to pivot tables
+- 🎨 **Conditional Formatting** - Quick visual interpretation
+- 📱 **Organized Layout** - Clean, professional dashboard design
+- 💾 **Data Export** - Easy data extraction and sharing
 - 🔄 **Power Query** - Automated data transformation and cleaning
+- 📈 **Excel Formulas** - Advanced calculations and metrics
 
 ---
 
@@ -434,21 +434,22 @@ Implementing these recommendations can lead to:
 
 | Technology | Purpose | Expertise Level |
 |------------|---------|----------------|
-| ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black) | Dashboard creation & visualization | Advanced |
+| ![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoft-excel&logoColor=white) | Dashboard creation & visualization | Advanced |
 | ![Power Query](https://img.shields.io/badge/Power%20Query-0078D4?style=flat-square) | Data transformation & ETL | Advanced |
-| ![DAX](https://img.shields.io/badge/DAX-0078D4?style=flat-square) | Calculated measures & KPIs | Intermediate |
-| ![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoft-excel&logoColor=white) | Data source & preparation | Advanced |
 | ![CSV](https://img.shields.io/badge/CSV-Data-lightgrey?style=flat-square) | Data source format | - |
 
 </div>
 
 ### **Technical Implementation:**
 
-- **📊 Power BI Desktop** - Primary dashboard development platform
-  - Interactive visualizations and reports
-  - Cross-filtering and drill-through capabilities
-  - Custom themes and formatting
-  - Publishing to Power BI Service
+- **📊 Microsoft Excel** - Primary dashboard development platform
+  - Interactive dashboard with slicers and filters
+  - Pivot tables for data summarization
+  - Pivot charts for visualization
+  - Conditional formatting for visual insights
+  - Advanced Excel formulas (SUMIFS, COUNTIFS, IF, etc.)
+  - Data validation and drop-down lists
+  - Professional dashboard layout and design
 
 - **🔄 Power Query Editor** - Data transformation engine
   - Data cleaning and preprocessing
@@ -457,28 +458,28 @@ Implementing these recommendations can lead to:
   - Custom M code for advanced transformations
   - Handling missing values and duplicates
   - Date table creation and calendar logic
+  - Automated data refresh workflows
+  - Query folding for performance optimization
 
-- **🔢 DAX (Data Analysis Expressions)** - Custom calculations for:
-  - Year-over-year growth metrics
-  - Percentage contributions by category
-  - Conditional formatting logic
-  - Dynamic KPI calculations
-  - Time intelligence functions
-  - Calculated columns and measures
-
-- **📈 Power BI Features Used:**
+- **📈 Excel Features Used:**
   - Slicers for interactive filtering
-  - Bookmarks for navigation
-  - Tooltips with detailed information
-  - Conditional formatting
-  - Custom visuals
-  - Row-level security (if applicable)
+  - Pivot tables for aggregation
+  - Pivot charts for visualization
+  - Conditional formatting for KPIs
+  - Named ranges for better formula management
+  - Data validation for consistency
+  - Custom number formatting
+  - Cell styles and themes
 
-- **🧹 Data Preparation:**
-  - Excel for initial data validation
-  - Power Query for ETL processes
-  - Data modeling and relationships
-  - Star schema design
+- **🧹 Data Preparation Workflow:**
+  1. Import raw CSV data into Power Query
+  2. Clean and transform data using Power Query steps
+  3. Load cleaned data to Excel worksheet
+  4. Create pivot tables from cleaned data
+  5. Build pivot charts for visualizations
+  6. Add slicers for interactivity
+  7. Design dashboard layout
+  8. Apply formatting and styling
 
 ---
 
@@ -521,10 +522,9 @@ Implementing these recommendations can lead to:
 
 ### **Prerequisites:**
 
-- Power BI Desktop (Latest version recommended)
-- Microsoft Excel (for viewing source data)
-- Basic understanding of Power BI and data visualization
-- Power BI account (optional, for publishing to Power BI Service)
+- Microsoft Excel 2016 or later (with Power Query support)
+- Basic understanding of Excel and data visualization
+- Familiarity with pivot tables (helpful but not required)
 
 ### **Installation & Setup:**
 
@@ -536,14 +536,10 @@ cd Online-Store-Report
 
 **Step 2: Open the Dashboard**
 ```bash
-# Option 1: Power BI Report File (Recommended)
-# Double-click: Online_Store_Dashboard.pbix
-
-# Option 2: Open in Power BI Desktop
-# Launch Power BI Desktop
-# File -> Open -> Browse
-# Select: Online_Store_Dashboard.pbix
-# Data will load automatically from embedded source
+# Open the Excel file
+# Double-click: Online_Store_Dashboard.xlsx
+# Enable editing if prompted
+# Ensure macros/data connections are enabled
 ```
 
 **Step 3: Explore the Dashboard**
@@ -552,53 +548,67 @@ cd Online-Store-Report
    - Select specific channels (e.g., Amazon, Myntra)
    - Filter by month to see seasonal trends
    - Choose age groups or gender for demographic analysis
+   - Click on multiple items to select/deselect
 
-2. **Interact with Visuals:**
-   - Click on bars/charts to cross-filter other visuals
-   - Hover over data points for detailed tooltips
-   - Use dual-axis chart to compare sales vs. orders
-   - Right-click for drill-through options
+2. **Interact with Charts:**
+   - Charts automatically update when you change slicer selections
+   - Hover over data points for details
+   - Right-click on charts to access formatting options
 
 3. **View Power Query Transformations:**
-   - Click "Transform Data" to open Power Query Editor
+   - Go to Data tab → Get Data → Launch Power Query Editor
    - Review data cleaning and transformation steps
    - Examine M code for custom transformations
+   - See the ETL workflow
 
-4. **Explore DAX Measures:**
-   - Navigate to Model view
-   - Review calculated measures and columns
-   - Understand DAX formulas used
+4. **Explore Pivot Tables:**
+   - Navigate to the data sheets
+   - Review pivot table configurations
+   - Understand field arrangements
+   - See calculated fields and formulas
 
-5. **Export Insights:**
-   - Export data to Excel for deeper analysis
-   - Export visualizations as images for presentations
-   - Publish to Power BI Service for sharing
+5. **Refresh Data:**
+   - Data tab → Refresh All (to update from source)
+   - Power Query automatically applies all transformations
+
+6. **Export/Share:**
+   - Save as PDF for presentations
+   - Share Excel file with stakeholders
+   - Export charts as images
 
 ### **Dashboard Navigation:**
 
 ```
-📊 Power BI Dashboard Layout:
-├── 🎛️ Filters Panel (Left/Top)
-│   ├── Channel Slicer
-│   ├── Month Slicer
-│   ├── Age Group Slicer
-│   └── Gender Slicer
+📊 Excel Dashboard Layout:
+├── 📑 Dashboard Sheet (Main View)
+│   ├── 🎛️ Slicers Panel (Top)
+│   │   ├── Channel Slicer
+│   │   ├── Month Slicer
+│   │   ├── Age Group Slicer
+│   │   └── Gender Slicer
+│   │
+│   ├── 📍 Geographic View (Top Left)
+│   │   └── Top 5 States by Sales (Bar Chart)
+│   │
+│   ├── 📊 Performance Metrics (Top Right)
+│   │   ├── Monthly Sales vs Orders (Line Chart)
+│   │   └── Sales by Gender (Pie/Donut Chart)
+│   │
+│   ├── 👥 Demographics (Middle)
+│   │   └── Age Group & Gender Analysis (Column Chart)
+│   │
+│   ├── 📦 Operations (Bottom Left)
+│   │   └── Order Status Breakdown (Pie Chart)
+│   │
+│   └── 🛒 Channel Analysis (Bottom Right)
+│       └── Sales by Channel (Bar Chart)
 │
-├── 📍 Geographic View (Top Left)
-│   └── Top 5 States by Sales (Bar Chart)
+├── 📊 Data Sheet (Hidden/Background)
+│   └── Cleaned data from Power Query
 │
-├── 📊 Performance Metrics (Top Right)
-│   ├── Monthly Sales vs Orders (Dual-Axis Line Chart)
-│   └── Sales by Gender (Donut/Pie Chart)
-│
-├── 👥 Demographics (Middle)
-│   └── Age Group & Gender Analysis (Clustered Column)
-│
-├── 📦 Operations (Bottom Left)
-│   └── Order Status Breakdown (Donut Chart)
-│
-└── 🛒 Channel Analysis (Bottom Right)
-    └── Sales by Channel (Bar Chart)
+└── 🔄 Power Query Queries
+    ├── Source data connection
+    └── Transformation steps
 ```
 
 ---
@@ -611,13 +621,13 @@ This project showcases proficiency in multiple analytics domains:
 
 | Skill Category | Specific Competencies | Business Application |
 |----------------|----------------------|---------------------|
-| **📊 Power BI Development** | Dashboard design, report building, visual selection | Stakeholder communication |
+| **📊 Excel Dashboard Development** | Dashboard design, pivot tables, pivot charts, slicers | Stakeholder communication |
 | **🔄 Power Query/ETL** | Data transformation, M code, query optimization | Data pipeline creation |
-| **🔢 DAX Formulas** | Calculated measures, time intelligence, aggregations | Advanced analytics |
+| **📐 Excel Formulas** | Advanced functions, calculated fields, data analysis | Metric calculations |
 | **💼 Business Intelligence** | Trend analysis, segmentation, forecasting | Strategic planning |
-| **🎨 Dashboard Design** | UI/UX principles, layout optimization, interactivity | User experience |
-| **📈 E-commerce Analytics** | Funnel analysis, channel attribution, conversion | Revenue optimization |
-| **🗃️ Data Modeling** | Star schema, relationships, hierarchies | Data architecture |
+| **🎨 Dashboard Design** | Layout optimization, visual hierarchy, formatting | User experience |
+| **📈 E-commerce Analytics** | Sales analysis, channel attribution, conversion tracking | Revenue optimization |
+| **🗃️ Data Modeling** | Data structures, relationships, pivot table design | Data organization |
 | **📖 Data Storytelling** | Insight generation, narrative building, recommendations | Executive presentation |
 
 </div>
@@ -651,15 +661,15 @@ This project showcases proficiency in multiple analytics domains:
 
 ### **Prince Kumar Singh**
 
-*Aspiring Data Analyst | Power BI Developer | E-commerce Analytics Expert*
+*Aspiring Data Analyst | Excel Dashboard Specialist | E-commerce Analytics Expert*
 
 **Core Competencies:**
-- 📊 Power BI Desktop & Power BI Service (Advanced Dashboard Development)
+- 📊 Microsoft Excel (Advanced Dashboard Development, Pivot Tables, Charts)
 - 🔄 Power Query Editor (ETL & Data Transformation)
-- 🔢 DAX (Data Analysis Expressions) for KPI Creation
+- 📐 Advanced Excel Formulas (VLOOKUP, INDEX-MATCH, Array Formulas)
 - 💼 Business Intelligence & Analytics Strategy
 - 📈 E-commerce & Retail Analytics
-- 🧹 Data Cleaning & Transformation (Excel, Power Query)
+- 🧹 Data Cleaning & Transformation
 - 📉 Statistical Analysis & Trend Forecasting
 - 💡 Business Consulting & Strategic Recommendations
 
@@ -669,7 +679,7 @@ This project showcases proficiency in multiple analytics domains:
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/princesi22)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](#)
-[![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](#)
+[![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)](#)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
 
 </div>
@@ -690,14 +700,14 @@ Contributions, suggestions, and feedback are welcome!
 
 ### **Contribution Ideas:**
 
-- 📊 Additional visualization types (geographic maps, funnel charts, waterfall charts)
-- 🔍 Deeper customer segmentation (RFM analysis, cohorts)
-- 🔢 Advanced DAX measures (customer lifetime value, churn prediction)
-- 🔄 Enhanced Power Query transformations (incremental refresh, parameters)
-- 📱 Mobile-optimized report layouts
-- 🤖 Integration with Power Automate for automated reporting
+- 📊 Additional chart types (waterfall charts, combo charts, sparklines)
+- 🔍 Deeper customer segmentation (RFM analysis, cohort analysis)
+- 📐 Advanced Excel formulas (dynamic arrays, XLOOKUP, LET function)
+- 🔄 Enhanced Power Query transformations (parameters, custom functions)
+- 📱 Print-optimized layouts for reporting
+- 🎨 Alternative dashboard themes and color schemes
 - 🌍 Competitor benchmarking analysis
-- 📈 Predictive analytics using Power BI AI visuals
+- 📈 Trend lines and forecasting using Excel's built-in tools
 
 ---
 
@@ -709,22 +719,22 @@ This project is available for educational and portfolio purposes. Please provide
 
 ## 📚 Additional Resources
 
-- **📖 Power BI Documentation:** [Power BI Help](https://docs.microsoft.com/en-us/power-bi/)
+- **📖 Excel Documentation:** [Microsoft Excel Help](https://support.microsoft.com/en-us/excel)
 - **🔄 Power Query:** [Power Query M Reference](https://docs.microsoft.com/en-us/powerquery-m/)
-- **🔢 DAX Resources:** [DAX Guide](https://dax.guide/) | [SQLBI DAX Patterns](https://www.daxpatterns.com/)
+- **📊 Excel Dashboard:** [Excel Dashboard Best Practices](https://trumpexcel.com/excel-dashboard/)
 - **💼 E-commerce Analytics:** [Think with Google](https://www.thinkwithgoogle.com/)
-- **📊 Dashboard Design:** [Power BI Best Practices](https://docs.microsoft.com/en-us/power-bi/guidance/)
+- **📈 Pivot Tables:** [Excel Pivot Table Guide](https://support.microsoft.com/en-us/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576)
 
 ---
 
 ## ⭐ Acknowledgments
 
 - 🛒 E-commerce platforms for inspiring dashboard design
-- 📊 Power BI community for visualization best practices
-- 🔄 Power Query community for ETL techniques
-- 🔢 DAX community for calculation optimization
+- 📊 Excel community for visualization best practices and techniques
+- 🔄 Power Query community for ETL transformation methods
 - 💼 Business analysts and data professionals for insights
-- 🌐 Open learning resources enabling this project
+- 🌐 Open learning resources and Excel tutorial creators
+- 📚 Microsoft for excellent Excel and Power Query documentation
 
 ---
 
