@@ -4,8 +4,8 @@
 
 ### *Data-Driven Insights for Strategic Sales Growth*
 
-[![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)](https://github.com/princesi22/Online-Store-Report)
-[![DAX](https://img.shields.io/badge/DAX-0078D4?style=for-the-badge)](https://github.com/princesi22/Online-Store-Report)
+[![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://github.com/princesi22/Online-Store-Report)
+[![Power Query](https://img.shields.io/badge/Power%20Query-0078D4?style=for-the-badge)](https://github.com/princesi22/Online-Store-Report)
 [![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)](https://github.com/princesi22/Online-Store-Report)
 [![Business Intelligence](https://img.shields.io/badge/Business-Intelligence-FF6B6B?style=for-the-badge)](https://github.com/princesi22/Online-Store-Report)
 
@@ -34,7 +34,7 @@
 
 ## 📌 Project Overview
 
-The **Online Store Annual Sales Report** is a comprehensive, interactive dashboard built with **Tableau** that provides end-to-end analysis of e-commerce performance. This project analyzes sales data across multiple dimensions to uncover actionable insights for business growth.
+The **Online Store Annual Sales Report** is a comprehensive, interactive dashboard built with **Power BI** that provides end-to-end analysis of e-commerce performance. This project analyzes sales data across multiple dimensions to uncover actionable insights for business growth.
 
 ### **Dashboard Scope:**
 
@@ -99,6 +99,7 @@ The dashboard provides dynamic filtering capabilities for deep-dive analysis:
 - 📱 **Responsive Design** - Optimized viewing experience
 - 💾 **Data Export** - Download filtered data for deeper analysis
 - 🔢 **DAX Calculations** - Real-time metric computations
+- 🔄 **Power Query** - Automated data transformation and cleaning
 
 ---
 
@@ -433,37 +434,51 @@ Implementing these recommendations can lead to:
 
 | Technology | Purpose | Expertise Level |
 |------------|---------|----------------|
-| ![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=tableau&logoColor=white) | Dashboard creation & visualization | Advanced |
+| ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black) | Dashboard creation & visualization | Advanced |
+| ![Power Query](https://img.shields.io/badge/Power%20Query-0078D4?style=flat-square) | Data transformation & ETL | Advanced |
 | ![DAX](https://img.shields.io/badge/DAX-0078D4?style=flat-square) | Calculated measures & KPIs | Intermediate |
-| ![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoft-excel&logoColor=white) | Data cleaning & preparation | Advanced |
+| ![Excel](https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoft-excel&logoColor=white) | Data source & preparation | Advanced |
 | ![CSV](https://img.shields.io/badge/CSV-Data-lightgrey?style=flat-square) | Data source format | - |
 
 </div>
 
 ### **Technical Implementation:**
 
-- **📊 Tableau Desktop** - Primary dashboard development platform
-- **🔢 DAX Formulas** - Custom calculations for:
+- **📊 Power BI Desktop** - Primary dashboard development platform
+  - Interactive visualizations and reports
+  - Cross-filtering and drill-through capabilities
+  - Custom themes and formatting
+  - Publishing to Power BI Service
+
+- **🔄 Power Query Editor** - Data transformation engine
+  - Data cleaning and preprocessing
+  - Column transformations and data type conversions
+  - Merging and appending queries
+  - Custom M code for advanced transformations
+  - Handling missing values and duplicates
+  - Date table creation and calendar logic
+
+- **🔢 DAX (Data Analysis Expressions)** - Custom calculations for:
   - Year-over-year growth metrics
-  - Moving averages for trend analysis
   - Percentage contributions by category
   - Conditional formatting logic
   - Dynamic KPI calculations
+  - Time intelligence functions
+  - Calculated columns and measures
 
-- **📈 Tableau Features Used:**
-  - Calculated fields for derived metrics
-  - Parameters for dynamic filtering
-  - Dual-axis charts for comparison
-  - Color palettes for visual hierarchy
-  - Interactive filters and slicers
+- **📈 Power BI Features Used:**
+  - Slicers for interactive filtering
+  - Bookmarks for navigation
   - Tooltips with detailed information
+  - Conditional formatting
+  - Custom visuals
+  - Row-level security (if applicable)
 
-- **🧹 Data Preparation (Excel):**
-  - Data cleaning and validation
-  - Date formatting and standardization
-  - Category mapping and grouping
-  - Missing value handling
-  - Data type conversions
+- **🧹 Data Preparation:**
+  - Excel for initial data validation
+  - Power Query for ETL processes
+  - Data modeling and relationships
+  - Star schema design
 
 ---
 
@@ -506,9 +521,10 @@ Implementing these recommendations can lead to:
 
 ### **Prerequisites:**
 
-- Tableau Desktop or Tableau Public (2020.4 or later)
+- Power BI Desktop (Latest version recommended)
 - Microsoft Excel (for viewing source data)
-- Basic understanding of e-commerce metrics
+- Basic understanding of Power BI and data visualization
+- Power BI account (optional, for publishing to Power BI Service)
 
 ### **Installation & Setup:**
 
@@ -520,18 +536,19 @@ cd Online-Store-Report
 
 **Step 2: Open the Dashboard**
 ```bash
-# Option 1: Packaged Workbook (Recommended)
-# Double-click: Online_Store_Dashboard.twbx
+# Option 1: Power BI Report File (Recommended)
+# Double-click: Online_Store_Dashboard.pbix
 
-# Option 2: Standard Workbook
-# Open Tableau Desktop
-# File -> Open -> Online_Store_Dashboard.twb
-# Connect to data source when prompted
+# Option 2: Open in Power BI Desktop
+# Launch Power BI Desktop
+# File -> Open -> Browse
+# Select: Online_Store_Dashboard.pbix
+# Data will load automatically from embedded source
 ```
 
 **Step 3: Explore the Dashboard**
 
-1. **Apply Filters:** Use slicers to customize your analysis
+1. **Apply Filters (Slicers):** Use interactive controls to customize your analysis
    - Select specific channels (e.g., Amazon, Myntra)
    - Filter by month to see seasonal trends
    - Choose age groups or gender for demographic analysis
@@ -540,37 +557,48 @@ cd Online-Store-Report
    - Click on bars/charts to cross-filter other visuals
    - Hover over data points for detailed tooltips
    - Use dual-axis chart to compare sales vs. orders
+   - Right-click for drill-through options
 
-3. **Export Insights:**
-   - Download filtered data for deeper analysis
-   - Export visualizations for presentations
-   - Share dashboard link with stakeholders
+3. **View Power Query Transformations:**
+   - Click "Transform Data" to open Power Query Editor
+   - Review data cleaning and transformation steps
+   - Examine M code for custom transformations
+
+4. **Explore DAX Measures:**
+   - Navigate to Model view
+   - Review calculated measures and columns
+   - Understand DAX formulas used
+
+5. **Export Insights:**
+   - Export data to Excel for deeper analysis
+   - Export visualizations as images for presentations
+   - Publish to Power BI Service for sharing
 
 ### **Dashboard Navigation:**
 
 ```
-📊 Dashboard Layout:
-├── 🎛️ Filters Panel (Top)
-│   ├── Channel Selector
-│   ├── Month Selector
-│   ├── Age Group Filter
-│   └── Gender Filter
+📊 Power BI Dashboard Layout:
+├── 🎛️ Filters Panel (Left/Top)
+│   ├── Channel Slicer
+│   ├── Month Slicer
+│   ├── Age Group Slicer
+│   └── Gender Slicer
 │
 ├── 📍 Geographic View (Top Left)
-│   └── Top 5 States by Sales
+│   └── Top 5 States by Sales (Bar Chart)
 │
 ├── 📊 Performance Metrics (Top Right)
-│   ├── Monthly Sales vs Orders
-│   └── Sales by Gender
+│   ├── Monthly Sales vs Orders (Dual-Axis Line Chart)
+│   └── Sales by Gender (Donut/Pie Chart)
 │
 ├── 👥 Demographics (Middle)
-│   └── Age Group & Gender Analysis
+│   └── Age Group & Gender Analysis (Clustered Column)
 │
 ├── 📦 Operations (Bottom Left)
-│   └── Order Status Breakdown
+│   └── Order Status Breakdown (Donut Chart)
 │
 └── 🛒 Channel Analysis (Bottom Right)
-    └── Sales by Channel
+    └── Sales by Channel (Bar Chart)
 ```
 
 ---
@@ -583,14 +611,14 @@ This project showcases proficiency in multiple analytics domains:
 
 | Skill Category | Specific Competencies | Business Application |
 |----------------|----------------------|---------------------|
-| **📊 Data Visualization** | Dashboard design, chart selection, color theory | Stakeholder communication |
-| **🔢 Advanced Analytics** | DAX formulas, calculated fields, KPI creation | Metric development |
+| **📊 Power BI Development** | Dashboard design, report building, visual selection | Stakeholder communication |
+| **🔄 Power Query/ETL** | Data transformation, M code, query optimization | Data pipeline creation |
+| **🔢 DAX Formulas** | Calculated measures, time intelligence, aggregations | Advanced analytics |
 | **💼 Business Intelligence** | Trend analysis, segmentation, forecasting | Strategic planning |
 | **🎨 Dashboard Design** | UI/UX principles, layout optimization, interactivity | User experience |
 | **📈 E-commerce Analytics** | Funnel analysis, channel attribution, conversion | Revenue optimization |
-| **🗃️ Data Modeling** | Relationships, hierarchies, aggregations | Data structure |
+| **🗃️ Data Modeling** | Star schema, relationships, hierarchies | Data architecture |
 | **📖 Data Storytelling** | Insight generation, narrative building, recommendations | Executive presentation |
-| **🧹 Data Preparation** | Cleaning, transformation, validation | Data quality |
 
 </div>
 
@@ -623,14 +651,15 @@ This project showcases proficiency in multiple analytics domains:
 
 ### **Prince Kumar Singh**
 
-*Aspiring Data Analyst | Tableau Specialist | E-commerce Analytics Expert*
+*Aspiring Data Analyst | Power BI Developer | E-commerce Analytics Expert*
 
 **Core Competencies:**
-- 📊 Tableau Desktop & Tableau Public (Advanced Dashboard Development)
+- 📊 Power BI Desktop & Power BI Service (Advanced Dashboard Development)
+- 🔄 Power Query Editor (ETL & Data Transformation)
 - 🔢 DAX (Data Analysis Expressions) for KPI Creation
 - 💼 Business Intelligence & Analytics Strategy
 - 📈 E-commerce & Retail Analytics
-- 🧹 Data Cleaning & Transformation (Excel, SQL)
+- 🧹 Data Cleaning & Transformation (Excel, Power Query)
 - 📉 Statistical Analysis & Trend Forecasting
 - 💡 Business Consulting & Strategic Recommendations
 
@@ -640,7 +669,7 @@ This project showcases proficiency in multiple analytics domains:
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/princesi22)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](#)
-[![Tableau Public](https://img.shields.io/badge/Tableau-Public-E97627?style=for-the-badge&logo=tableau&logoColor=white)](#)
+[![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](#)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
 
 </div>
@@ -661,12 +690,14 @@ Contributions, suggestions, and feedback are welcome!
 
 ### **Contribution Ideas:**
 
-- 📊 Additional visualization types (geographic maps, funnel charts)
+- 📊 Additional visualization types (geographic maps, funnel charts, waterfall charts)
 - 🔍 Deeper customer segmentation (RFM analysis, cohorts)
 - 🔢 Advanced DAX measures (customer lifetime value, churn prediction)
-- 📱 Mobile-optimized dashboard version
-- 🤖 Predictive analytics integration
+- 🔄 Enhanced Power Query transformations (incremental refresh, parameters)
+- 📱 Mobile-optimized report layouts
+- 🤖 Integration with Power Automate for automated reporting
 - 🌍 Competitor benchmarking analysis
+- 📈 Predictive analytics using Power BI AI visuals
 
 ---
 
@@ -678,18 +709,20 @@ This project is available for educational and portfolio purposes. Please provide
 
 ## 📚 Additional Resources
 
-- **📖 Tableau Documentation:** [Tableau Help](https://help.tableau.com/)
-- **🔢 DAX Resources:** [DAX Guide](https://dax.guide/) | [DAX Patterns](https://www.daxpatterns.com/)
+- **📖 Power BI Documentation:** [Power BI Help](https://docs.microsoft.com/en-us/power-bi/)
+- **🔄 Power Query:** [Power Query M Reference](https://docs.microsoft.com/en-us/powerquery-m/)
+- **🔢 DAX Resources:** [DAX Guide](https://dax.guide/) | [SQLBI DAX Patterns](https://www.daxpatterns.com/)
 - **💼 E-commerce Analytics:** [Think with Google](https://www.thinkwithgoogle.com/)
-- **📊 Dashboard Design:** [Tableau Best Practices](https://help.tableau.com/current/pro/desktop/en-us/dashboards_best_practices.htm)
+- **📊 Dashboard Design:** [Power BI Best Practices](https://docs.microsoft.com/en-us/power-bi/guidance/)
 
 ---
 
 ## ⭐ Acknowledgments
 
 - 🛒 E-commerce platforms for inspiring dashboard design
-- 📊 Tableau community for visualization best practices
-- 🔢 DAX community for calculation techniques
+- 📊 Power BI community for visualization best practices
+- 🔄 Power Query community for ETL techniques
+- 🔢 DAX community for calculation optimization
 - 💼 Business analysts and data professionals for insights
 - 🌐 Open learning resources enabling this project
 
